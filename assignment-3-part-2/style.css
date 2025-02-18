@@ -20,5 +20,5 @@ html {
     text-shadow: 1px 1px 1px #000000;
     border-radius: 10px;
     border: 1px solid #cc0000;
-    
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
   }
