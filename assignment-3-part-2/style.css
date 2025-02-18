@@ -20,7 +20,7 @@ html {
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
     border-radius: 10px;
-    border: 1px solid #cc0000;
+    border: 1px solid #cc0000c4;
     background-image: linear-gradient( rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
                 inset 0 4px 8px rgba(255, 255, 255, 0.2), 
