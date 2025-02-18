@@ -8,3 +8,17 @@ html {
     align-items: center;
     width: 100%;
   }
+
+  .box { 
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem; /* 1.125rem = 18px (based on the root font size of 16px) */
+    background-color: #ff0000;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    border-radius: 10px;
+    border: 1px solid #cc0000;
+    
+  }
