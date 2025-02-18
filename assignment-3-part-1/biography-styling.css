@@ -25,5 +25,11 @@ body {
   }
   
   a:hover {
-    text-decoration: none;
+    text-decoration: green;
+  }
+
+  ul {
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 20px; 
   }
