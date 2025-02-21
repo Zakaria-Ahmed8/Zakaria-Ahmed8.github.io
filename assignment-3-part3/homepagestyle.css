@@ -106,3 +106,6 @@
     margin-left: 5px; /* Add some space between the link and the icon */
   }
 
+  p, ul, ol {
+    line-height: 1.6; /*all lists and paragraph have the same line height */
+  }
