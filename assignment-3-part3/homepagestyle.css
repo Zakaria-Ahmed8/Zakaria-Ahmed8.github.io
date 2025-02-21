@@ -75,5 +75,34 @@
     text-indent: 20px; /* indents the first paragraph */
   }
 
+  a {
+    color: #a66; /* changes the default link color to match the bars */
+    text-decoration: underline; /* underline links by default */
+  }
 
+  a:visited {
+    color: rgba(170, 102, 102, 0.29); /* visited link color */
+  }
+
+  a:focus {
+    color: #c77; /* focus link color */
+    text-decoration: none; /* removes underline when focused */
+    outline: none; /* removes default focus outline */
+  }
+
+  a:hover {
+    color: #d88; /* hovered link color */
+    text-decoration: none; /* removes underline when hovered */
+  }
+
+  a:active {
+    color: red;
+    text-decoration: none;
+
+  }
+
+  a[target="_blank"]::after {
+    content: url("../images/external-link-20.png"); /* Add the external link icon */
+    margin-left: 5px; /* Add some space between the link and the icon */
+  }
 
