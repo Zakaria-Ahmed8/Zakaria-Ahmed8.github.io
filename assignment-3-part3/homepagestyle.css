@@ -8,6 +8,7 @@
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
+
   }
   
   /* Layout */
@@ -43,3 +44,36 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  h1, h2 {
+    font-family: Roboto Slab, serif; /*applying roboto slab to headings */
+    letter-spacing: 0.05rem; /* letter-spacing for breathing room */
+  }
+
+  h1 {
+    
+    font-size: 2.5rem; /* text size for h1 */
+    text-align: center; /*aligning the heading in the middle */
+  }
+  
+  h2 {
+    font-size: 2rem; /* text size for h2  */
+  }
+  
+  body {
+    font-family: Merriweather, serif;  /*applying Merriweather to body*/
+    line-height: 1.6; /* adjusting the line height of the body */
+    letter-spacing: 0.02rem; /*ads letter spacing for body */
+    word-spacing: 0.1rem; /*adds word spacing for body */
+  }
+
+  * {
+    font-size: 10px; /* site wide font of 10px */
+  }
+
+   h1 + p, h2 + p {
+    text-indent: 20px; /* indents the first paragraph */
+  }
+
+
+
