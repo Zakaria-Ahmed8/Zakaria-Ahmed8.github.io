@@ -1,3 +1,35 @@
+/* Add font-face for Roboto Slab */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Add font-face for Merriweather */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 /* General setup */
 
 * {
