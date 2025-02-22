@@ -3,6 +3,7 @@ html {
   }
   
   /* Your CSS below here */
+
   .container {
     display: flex;
     justify-content: center;
@@ -11,21 +12,23 @@ html {
   }
 
   .box { 
+    /* appropiate sizing for a box */
     width: 200px;
     height: 200px;
+    /* aligns the box to the center horizontally */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* content inside box is in the center */
     font-size: 1.125rem; /* 1.125rem = 18px (based on the root font size of 16px) */
-    background-color: #ff0000;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px #000000;
-    border-radius: 10px;
-    border: 1px solid #cc0000c4;
-    background-image: linear-gradient( rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+    background-color: #ff0000; /*color of box */
+    color: #ffffff; /*color of text inside box */
+    text-shadow: 1px 1px 1px #000000; /* contrasting text shadow */
+    border-radius: 10px; /* implements border radius for the box */
+    border: 1px solid #cc0000c4; /* slightly darker solid border for box */
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%); /*  linear semi-transparent black gradient that goes towards the top left corner that is completely transparent at the start */
     box-shadow: 3px 3px 5px rgb(0, 0, 0),
                 inset 2px 2px 8px rgb(247, 247, 247), 
-                inset  -2px 2px 5px rgb(0, 0, 0); 
+                inset  -2px 2px 5px rgb(0, 0, 0);  /* multiple box shadows implemented */
     
 
  }
