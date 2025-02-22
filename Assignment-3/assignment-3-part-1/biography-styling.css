@@ -3,14 +3,14 @@ body {
   }
   
   h1 {
-    color: hotpink;
+    color: hotpink; /* makes the heading hotpink */
     font-size: 2em;
     font-family: Georgia, "Times New Roman", Times, serif;
-    border-bottom: 10px dotted purple;
+    border-bottom: 10px dotted purple; /*gives the level 1 header a dotted purple border */
   }
   
   h2 {
-    font-style: italic;
+    font-style: italic; /* italic level 2 heading */
     font-size: 1.5em;
   }
   
@@ -25,11 +25,14 @@ body {
   }
   
   a:hover {
+    /* links are green on hover */
     text-decoration: green;
   }
 
   ul {
-    background-color: #eeeeee;
+    /* edits the format of the contact details with a background and border 
+    with padding */
+    background-color: #eeeeee; 
     border: 5px solid purple;
     padding: 20px; 
   }
