@@ -62,9 +62,12 @@
   
   body {
     font-family: Merriweather, serif;  /*applying Merriweather to body*/
-    line-height: 1.6; /* adjusting the line height of the body */
     letter-spacing: 0.02rem; /*ads letter spacing for body */
     word-spacing: 0.1rem; /*adds word spacing for body */
+  }
+
+  p, li {
+    line-height: 1.6; /* adjusting the line height of the body */
   }
 
   * {
