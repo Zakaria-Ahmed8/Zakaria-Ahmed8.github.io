@@ -32,6 +32,8 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex; /* changes the nav menu to a row */
+    justify-content: space-between; /* equal amount of space between items */
   }
   
   nav a {
