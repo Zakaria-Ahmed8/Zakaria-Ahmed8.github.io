@@ -21,6 +21,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: flex; /*makes article and aside elements 2 columns */
 
   }
   
@@ -38,6 +39,7 @@ body {
     list-style: none;
     display: flex; /* changes the nav menu to a row */
     justify-content: space-between; /* equal amount of space between items */
+
   }
   
   nav a {
@@ -50,10 +52,13 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
   }
 
   .feature {
       width: 200px;
-      float: left; /* makes image stay to the left */
+      float: left; /* makes image stay to the left with text wrapped around */
       margin-right: 1em;
   }
