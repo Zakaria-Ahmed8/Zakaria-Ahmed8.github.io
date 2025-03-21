@@ -17,11 +17,15 @@ randomize.addEventListener('click', result);
 function result() {
     let newStory = storyText;
 
+    const xItem = randomValueFromArray(insertX);
+    const yIteml = randomValueFromArray(insertY);
+    const zItem = randomValueFromArray(insertZ);
+
   if(customName.value !== '') {
     const name = customName.value;
 
   }
-
+ 
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
@@ -33,4 +37,4 @@ function result() {
 
   return newStory;
 }
-console.log(result());
+
