@@ -18,7 +18,7 @@ function result() {
     let newStory = storyText;
 
     const xItem = randomValueFromArray(insertX);
-    const yIteml = randomValueFromArray(insertY);
+    const yItem = randomValueFromArray(insertY);
     const zItem = randomValueFromArray(insertZ);
 
   if(customName.value !== '') {
