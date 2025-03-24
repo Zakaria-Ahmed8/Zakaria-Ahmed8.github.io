@@ -175,10 +175,11 @@ function loop() {
         ball.update();
         ball.collisionDetect();
     }
+
+    EvilCircle.draw();
+    EvilCircle.checkBounds();
+    EvilCircle.collisionDetect();
   }
-  EvilCircle.draw(ctx);
-  EvilCircle.checkBounds();
-  EvilCircle.collisionDetect();
 
   requestAnimationFrame(loop);
 }
