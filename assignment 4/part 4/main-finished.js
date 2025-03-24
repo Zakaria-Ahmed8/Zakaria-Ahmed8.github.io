@@ -31,10 +31,7 @@ class Shape {
 
 class Ball extends Shape {
   constructor(x, y, velX, velY, color, size) {
-    super(x);
-    super(y);
-    super(velX);
-    super(velY);
+    super(x, y, velX, velY);
     this.color = color;
     this.size = size;
     this.exists = true;
@@ -81,6 +78,12 @@ class Ball extends Shape {
       }
     }
   }
+}
+
+class EvilCircle extends Shape {
+    constructor(x , y) {
+        super(x, y, 20, 20);
+    }
 }
 
 const balls = [];
