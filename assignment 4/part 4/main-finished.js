@@ -2,7 +2,7 @@
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-const ec = new EvilCircle(100, 100);
+
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
@@ -85,7 +85,7 @@ class EvilCircle extends Shape {
         super(x, y, 20, 20);
         this.color = "white";
         this.size = 10;
-    
+        
 
         window.addEventListener("keydown", (e) => {
             switch (e.key) {
@@ -165,21 +165,25 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+const evilCircle = new EvilCircle(random(0, width), random(0, height));
+
+
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    if(ball.exists){
-        ball.draw();
-        ball.update();
-        ball.collisionDetect();
+    if(ball.exists) {
+    ball.draw();
+    ball.update();
+    ball.collisionDetect();
     }
-
-    EvilCircle.draw();
-    EvilCircle.checkBounds();
-    EvilCircle.collisionDetect();
   }
+
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
+
 
   requestAnimationFrame(loop);
 }
