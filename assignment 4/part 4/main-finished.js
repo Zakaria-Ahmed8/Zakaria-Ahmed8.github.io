@@ -1,15 +1,20 @@
 // set up canvas
+const score = document.querySelector('p');
+let ballCount = 0
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-const evilCircle = new EvilCircle(random(0, width), random(0, height));
+
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
+
+
 
 // function to generate random number
 
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  return num;
 }
 
 // function to generate random RGB color value
@@ -141,18 +146,12 @@ class EvilCircle extends Shape {
     
             if (distance < this.size + ball.size) {
               ball.exists = false;
+              ballCount--;
+              score.textContent = "Ball count: " + ballCount;
             }
           }
         }
       }
-}
-
-const score = document.querySelector('p');
-
-let ballCount = 0;
-
-function updateScore() {
-    ballCountParagraph.textContent = `Ball count: ${ballCount}`;
 }
 
 const balls = [];
@@ -172,8 +171,11 @@ while (balls.length < 25) {
 
   balls.push(ball);
   ballCount++;
-  updateScore();
+  score.textContent = "Ball count: " + ballCount;
 }
+
+const evilCircle = new EvilCircle(random(0, width), random(0, height));
+
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
@@ -190,15 +192,6 @@ function loop() {
   evilCircle.draw();
   evilCircle.checkBounds();
   evilCircle.collisionDetect();
-
-for (const ball of balls) {
-    if (!ball.exists) {
-        ballCount--; // Decrement ball count
-        updateBallCount(); // Update the displayed ball count
-        ball.exists = null; // Avoid decrementing multiple times
-    }
-}
-
 
   requestAnimationFrame(loop);
 }
