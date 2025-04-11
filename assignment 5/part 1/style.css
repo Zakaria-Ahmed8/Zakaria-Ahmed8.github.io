@@ -201,12 +201,12 @@ audio {
 .comment-form label {
   align-self: center;
   flex: 2;
-  text-align: right;
+  text-align: left;
 }
 
 .comment-form input {
   margin-left: 1rem;
-  flex: 6;
+  flex: 1;
 }
 
 .show-hide {

@@ -27,7 +27,7 @@
       </ul>
 
       <form class="search">
-        <input type="search" name="q" placeholder="Search query">
+        <input type="search" name="q" placeholder="Search query" aria-label="Search">
         <input type="submit" value="Go!">
       </form>
     </nav>
@@ -101,7 +101,7 @@
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <div class="show-hide" tabindex="0" role="button" aria-pressed="false">Show comments</div>
 
           <div class="comment-wrapper">
 
@@ -109,11 +109,11 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                Your name:
+                <Label for="name">Your name:</Label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
-                Your comment:
+                <label for="comment">comment:</label> 
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
